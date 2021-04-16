@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="822,1199" sap2010:WorkflowViewState.IdRef="Main_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="822,1194" sap2010:WorkflowViewState.IdRef="Main_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
       <x:String>System.Activities.XamlIntegration</x:String>
@@ -62,7 +62,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <TryCatch DisplayName="Try catch" sap:VirtualizedContainerService.HintSize="539,890" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+  <TryCatch DisplayName="Try catch" sap:VirtualizedContainerService.HintSize="832,1029" sap2010:WorkflowViewState.IdRef="TryCatch_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -91,11 +91,11 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">260,134.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,68</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">360,202.5 360,257</av:PointCollection>
+              <av:Size x:Key="ShapeSize">200,66</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">360,200.5 360,257</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Login To URL" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Login To URL" sap:VirtualizedContainerService.HintSize="602,2996" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:Browser" Name="brw" />
               <Variable x:TypeArguments="x:String" Name="login_url" />
@@ -106,12 +106,12 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="560,22" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Chrome" />
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Oracle_HC_login_url" DisplayName="Get Asset" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="560,139" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Oracle_HC_login_url" DisplayName="Get Asset" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="560,137" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">[login_url]</OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <ui:OpenBrowser CommunicationMethod="{x:Null}" BrowserType="Chrome" DisplayName="Open browser" Hidden="False" sap:VirtualizedContainerService.HintSize="560,2666" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" UiBrowser="[brw]" Url="[login_url]">
+            <ui:OpenBrowser CommunicationMethod="{x:Null}" BrowserType="Chrome" DisplayName="chrome-Open browser" Hidden="False" sap:VirtualizedContainerService.HintSize="560,2665" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" UiBrowser="[brw]" Url="[login_url]">
               <ui:OpenBrowser.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -305,10 +305,10 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">260,257</av:Point>
-                  <av:Size x:Key="ShapeSize">200,68</av:Size>
+                  <av:Size x:Key="ShapeSize">200,66</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="SENDING EMAIL&#xA;" DisplayName="EMAIL_send" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <Sequence sap2010:Annotation.AnnotationText="SENDING EMAIL&#xA;" DisplayName="EMAIL_send" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="ui:GenericValue" Name="body" />
                   <Variable x:TypeArguments="scg:List(snm:Attachment)" Name="oAttachment" />
@@ -486,10 +486,10 @@
       </Flowchart>
     </TryCatch.Try>
     <TryCatch.Catches>
-      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="505,724" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="798,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
@@ -497,13 +497,13 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="499,654" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence sap:VirtualizedContainerService.HintSize="499,652" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="457,93" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[exception.Message]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="457,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[exception.Message]" />
             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="457,283" sap2010:WorkflowViewState.IdRef="CommentOut_5">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="421,205" sap2010:WorkflowViewState.IdRef="Sequence_18">
